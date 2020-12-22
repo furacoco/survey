@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>スーパーマーケット | アンケート</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="logo-img"><img src="logo.jpg" alt="ショップロゴ" width="200"></div>
+      <h1>お客様のご意見・ご感想をお聞かせください</h1>
+      <p>
+        いつも当店をご利用いただき誠にありがとうございます。<br />
+        お客様にとって今後より良いサービスを提供するためにアンケートのご協力をお願いいたします。
+      </p>
+    </header>
+    <main>
+      <form action="" method="post"></form>
+      <dl>
+        <dt>ご来店された日付</dt>
+        <dd><input type="date" name="date" /></dd>
+        <dt>ご来店時間帯</dt>
+        <dd>
+          <select name="time">
+            <option value="9～12時">9～12時</option>
+            <option value="13～16時">13～16時</option>
+            <option value="17～20時">17～20時</option>
+            <option value="21～23時">21～23時</option>
+          </select>
+        </dd>
+        <dt>お名前（任意）
+        </dt>
+        <dd><input type="text" name="your-name" placeholder="例）山田 花子" /></dd>
+        <dt>性別</dt>
+        <dd><label><input type="radio" name="gender" value="男性" />男性</label>
+          <label><input type="radio" name="gender" value="女性" />女性</label>
+        </dd>
+        <dt>年齢</dt>
+        <dd>
+          <select name="age">
+            <option value="10代">10代</option>
+            <option value="20代">20代</option>
+            <option value="30代" selected>30代</option>
+            <option value="40代">40代</option>
+            <option value="50代">50代</option>
+            <option value="60歳以上">60歳以上</option>
+          </select>
+        </dd>
+        <dt>お住まいの地区</dt>
+        <dd>
+          <select name="area">
+            <option value="中央区">中央区</option>
+            <option value="北区">北区</option>
+            <option value="西区">西区</option>
+            <option value="東区">東区</option>
+            <option value="南区">南区</option>
+          </select>
+        </dd>
+        <dt>ご来店手段</dt>
+        <dd>
+          <select name="transport">
+            <option value="徒歩">徒歩</option>
+            <option value="車">車</option>
+            <option value="自転車">自転車</option>
+            <option value="バス">バス</option>
+            <option value="JR・地下鉄">JR・地下鉄</option>
+            <option value="その他">その他</option>
+          </select>
+        </dd>
+        <dt>ご来店人数</dt>
+        <dd>
+          <select name="number">
+            <option value="1人">1人</option>
+            <option value="2人">2人</option>
+            <option value="3人以上">3人以上</option>
+          </select>
+        </dd>
+        <dt>どなたとご来店されましたか？</dt>
+        <dd>
+          <select name="member">
+            <option value="自分のみ">自分のみ</option>
+            <option value="夫婦">夫婦</option>
+            <option value="家族">家族</option>
+            <option value="友達">友達</option>
+            <option value="恋人">恋人</option>
+            <option value="その他">その他</option>
+          </select>
+        </dd>
+        <dt>ご来店前に何かご覧になりましたか？</dt>
+        <dd>
+          <select name="check">
+            <option value="折込チラシ">折込チラシ</option>
+            <option value="当店からのお知らせメール">当店からのお知らせメール</option>
+            <option value="当店HP">当店HP</option>
+            <option value="その他">その他</option>
+            <option value="特になし">特になし</option>
+          </select>
+        </dd>
+        <dt>ご利用頻度</dt>
+        <dd>
+          <select name="count">
+            <option value="週1〜2回">週1〜2回</option>
+            <option value="週3〜4回">週3〜4回</option>
+            <option value="週5〜6回">週5〜6回</option>
+            <option value="月数回程度">月数回程度</option>
+          </select>
+        </dd>
+        <dt>ご購入頻度の多い品目（複数選択可）</dt>
+        <dd>
+          <input type="checkbox" name="item" value="野菜" />野菜
+          <input type="checkbox" name="item" value="肉類" />肉類
+          <input type="checkbox" name="item" value="鮮魚類" />鮮魚類
+          <input type="checkbox" name="item" value="飲料" />飲料
+          <input type="checkbox" name="item" value="冷凍・加工品" />冷凍・加工品
+          <input type="checkbox" name="item" value="パン・菓子" />パン・菓子
+          <input type="checkbox" name="item" value="その他" />その他
+        </dd>
+        <!--
+    <dd>
+      <select name="item">
+        <option value="野菜">野菜</option>
+        <option value="肉類">肉類</option>
+        <option value="鮮魚類">鮮魚類</option>
+        <option value="飲料">飲料</option>
+        <option value="冷凍・加工品">冷凍・加工品</option>
+        <option value="パン・菓子">パン・菓子</option>
+        <option value="その他">その他</option>
+      </select>
+    </dd>
+-->
+        <dt>ご来店頻度の多い曜日</dt>
+        <dd>
+          <select name="week">
+            <option value="月曜日">月曜日</option>
+            <option value="火曜日">火曜日</option>
+            <option value="水曜日">水曜日</option>
+            <option value="木曜日">木曜日</option>
+            <option value="金曜日">金曜日</option>
+            <option value="土曜日">土曜日</option>
+            <option value="日曜日">日曜日</option>
+          </select>
+        </dd>
+        <dt>ご来店頻度の多い時間帯</dt>
+        <dd>
+          <select name="time">
+            <option value="9～12時">9～12時</option>
+            <option value="13～16時">13～16時</option>
+            <option value="17～20時">17～20時</option>
+            <option value="21～23時">21～23時</option>
+          </select>
+        </dd>
+        <dt>1回の平均購入金額</dt>
+        <dd>
+          <select name="price">
+            <option value="1,000円未満">1,000円未満</option>
+            <option value="1,000円〜5,000円" selected>1,000円〜5,000円</option>
+            <option value="5,000円以上">5,000円以上</option>
+          </select>
+        </dd>
+        <dt>店内は清潔に感じられますか？</dt>
+        <dd><label><input type="radio" name="clean" value="はい" />はい</label>
+          <label><input type="radio" name="clean" value="普通" />普通</label>
+          <label><input type="radio" name="clean" value="改善が必要" />改善が必要</label>
+        </dd>
+        <dt>店内の温度はいかがですか？</dt>
+        <dd>
+          <label><input type="radio" name="temperature" value="ちょうど良い" />ちょうど良い</label>
+          <label><input type="radio" name="temperature" value="普通" />普通</label>
+          <label><input type="radio" name="temperature" value="改善が必要" />改善が必要</label>
+        </dd>
+        <dt>レジ店員の接客態度はいかがでしたか？</dt>
+        <dd><label><input type="radio" name="service" value="良い" />良い</label>
+          <label><input type="radio" name="service" value="普通" />普通</label>
+          <label><input type="radio" name="service" value="改善が必要" />改善が必要</label>
+        </dd>
+        <dt>レジ店員のスピードはいかがでしたか？</dt>
+        <dd><label><input type="radio" name="speed" value="良い" />良い</label>
+          <label><input type="radio" name="speed" value="普通" />普通</label>
+          <label><input type="radio" name="speed" value="改善が必要" />改善が必要</label>
+        </dd>
+        <dt>お好きな当店取り扱いプライベートブランド</dt>
+        <dd>
+          <select name="brand">
+            <option value="みなさまのお墨付き">みなさまのお墨付き</option>
+            <option value="SEIYUプレミアム">SEIYUプレミアム</option>
+            <option value="SEIYUセレクト">SEIYUセレクト</option>
+            <option value="特になし">特になし</option>
+          </select>
+        </dd>
+        <dt>今後置いて欲しい商品等ございますか？</dt>
+        <dd><textarea name="want" id="" cols="40" rows="7" placeholder="ご自由にご記入ください"></textarea></dd>
+        <dt>全体的なサービスにおいてご要望はございますか？</dt>
+        <dd><textarea name="wish" id="" cols="40" rows="7" placeholder="ご自由にご記入ください"></textarea></dd>
+        <dt>ご利用全体満足度</dt>
+        <dd>
+          <select name="content">
+            <option value="大変良い">大変良い</option>
+            <option value="良い">良い</option>
+            <option value="普通" selected>普通</option>
+            <option value="不満">不満</option>
+          </select>
+        </dd>
+        <dt>
+          今後当店からe-mailによるお得な情報などのご案内をお送りしてもよろしいですか？
+        </dt>
+        <dd><label><input type="radio" name="info" value="はい" />はい</label>
+          <label><input type="radio" name="info" value="いいえ" />いいえ</label>
+        </dd>
+        <dt>よろしければメールアドレスをお教えください（任意）</dt>
+        <dd><input type="email" name="email" placeholder="例）hanako@example.com" /></dd>
+      </dl>
+    </main>
+    <footer>
+      <p>アンケートにお答えいただきましてありがとうございました。</p>
+      <input type="submit" value="送信" />
+    </footer>
+
+  </div>
+</body>
+
+</html>
